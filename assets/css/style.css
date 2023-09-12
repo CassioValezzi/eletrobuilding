@@ -1,0 +1,60 @@
+:root{
+    --font-body : 'Montserrat', 'sans-serif';
+    --color-gold: #ffd700;
+    --color-dark-grey: #464646;
+    --color-light-grey: #f8f9fa;
+    --color-black: #000;
+    --color-white: #fff;
+    --color: #0000002d;
+
+    
+}
+
+body{
+    font-family: var(--font-body);
+}
+h1,h2,h3,h4{
+    font-weight: bold;
+}
+
+.text-gold{
+    color: var(--color-gold);
+}
+.text-black{
+    color: var(--color-black);
+}
+.bg-black{
+    background-color: var(--color-black);
+}
+.bg-grey{
+    background-color: var(--color-light-grey);
+}
+.bg-white{
+    background-color: var(--color-white);
+}
+.height-50{
+    height: 50vh;
+}
+.text-500{
+    font-size: 10vh;
+}
+.logo-menu{
+    font-size: 25px;
+    font-weight: 600;
+}
+.logo-menu:hover{
+    color: var(--color-gold);
+}
+.navbar-toggler{
+    box-shadow: none;
+
+}
+#btn-navbar{
+    box-shadow: none;
+}
+.nav-link{
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: var(--color-gold);
+}
