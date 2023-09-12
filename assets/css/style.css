@@ -39,8 +39,7 @@ h1,h2,h3,h4{
     font-size: 10vh;
 }
 .logo-menu{
-    font-size: 25px;
-    font-weight: 600;
+    max-height: 4vh;
 }
 .logo-menu:hover{
     color: var(--color-gold);
