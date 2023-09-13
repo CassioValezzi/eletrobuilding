@@ -2,6 +2,7 @@
     --font-body : 'Montserrat', 'sans-serif';
     --color-gold: #ffd700;
     --color-dark-grey: #464646;
+    --color-light-grey2:#a7a9aa ;
     --color-light-grey: #f8f9fa;
     --color-black: #000;
     --color-white: #fff;
@@ -22,6 +23,9 @@ h1,h2,h3,h4{
 }
 .text-black{
     color: var(--color-black);
+}
+.text-li-grey{
+    color: var(--color-light-grey2);
 }
 .bg-black{
     background-color: var(--color-black);
@@ -59,10 +63,15 @@ h1,h2,h3,h4{
 }
 
 .message-h{
-    height: 20vh;
+    height: 15vh;
 }
 .maps-style{
     width: 100%; 
     height:450px; 
     border:0;
+}
+.iframe-style{
+    width:27vw; 
+    min-width: 300px;
+    height:29vh;
 }
