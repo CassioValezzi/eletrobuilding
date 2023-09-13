@@ -1,41 +1,119 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eletro Building</title>
+
+    <!-- bs icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- meu css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,700;1,800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <form id="contact-form">
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="from_name">
-        <label>Email</label>
-        <input type="email" name="reply_to">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
-    </form>
+    <header class="container-fluid p-3 bg-grey shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="logo-menu justify-content-start" href="#">
+                    <img class="img-fluid logo-menu " src="./assets/img/png-jpeg/logo/EB-dark.png"
+                        alt="Eletro Building">
+                </a>
+                <button class="navbar-toggler" id="btn-menu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-text-right"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Engenharia Elétrica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./talktous.html#maptalktous">Onde Estamos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./talktous.html#formtalktous">Fale conosco</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a href="https://wa.me/+551149914110" target="_blank" class="nav-link">
+                                <button class="btn btn-success"><i class="bi bi-telephone"></i> Whatsapp
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- form to emailjs API -->
+    <main class="container my-4 " id="formtalktous">
+        <section class="container">
+            <h1 class="display-8 w-75" >Fale Conosco?</h1>
+            <form class="row row-cols-2" id="contact-form">
+                <input type="hidden" name="contact_number">
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="from_name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="from_name" name="from_name"
+                            placeholder="Lucas da Silva">
+                    </div>
+                    <div class="mb-3">
+                        <label for="reply_to" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="reply_to" name="reply_to"
+                            aria-describedby="emailHelp" placeholder="lucas.silva@email.com">
+                        <div id="emailHelp" class="form-text"> Nunca compartilharemos seu e-mail com mais ninguém.</div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control message-h" id="message" name="message"
+                            placeholder="Deixe aqui sua mensagem" maxlength="300"></textarea>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <button type="submit" class="btn btn-primary" value="Send">Enviar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <section class="container my-4" id="maptalktous">
+        <div class="col-12 col-md-12">
+            <h2 class="display-8 w-75">Onde Estamos?</h2>
+            <iframe class="maps-style"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14619.997647624885!2d-46.5427378!3d-23.6401921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce438d5b3062af%3A0x923f01d7b7d98273!2sEletro%20Building!5e0!3m2!1spt-BR!2sbr!4v1694616774078!5m2!1spt-BR!2sbr"
+                 allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('vu1cixeqH75TR5QAg');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_ltywki5', 'template_e4zqh7x', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    <script type="text/javascript" src="./assets/js/emailjs.js"></script>
 </body>
+
 </html>
