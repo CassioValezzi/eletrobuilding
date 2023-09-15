@@ -1,4 +1,4 @@
 # eletrobuilding
-I'm used in my project
+I'm using in my project
 API`s:
 https://dashboard.emailjs.com/admin
