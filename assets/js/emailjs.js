@@ -29,9 +29,10 @@ function EmailJS() {
 
 Submit.addEventListener('click', () => {
     if( Name.value == '' || Email.value == '' || Message.value == ''){
-        alert("Um ou mais campos em branco\nPreencha todos os campos para mandar uma menssagem")
+        alert("Um ou mais campos em branco.\nPreencha todos os campos para mandar uma menssagem.")
     }
     else{
+        alert("Sucesso! Sua Mensagem foi enviada.")
         EmailJS()
     }
 })
