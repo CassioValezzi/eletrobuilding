@@ -13,6 +13,7 @@
 
 body {
     font-family: var(--font-body);
+
 }
 
 h1,
@@ -42,6 +43,10 @@ h4 {
     background-color: var(--color-light-grey);
 }
 
+.bg-grey-2{
+    background-color: var(--color-light-grey2);
+}
+
 .bg-white {
     background-color: var(--color-white);
 }
@@ -55,7 +60,11 @@ h4 {
 }
 
 .logo-img {
-    max-height: 4.5vh;
+    max-height: 7vh;
+}
+
+.align-center {
+    align-self: center;
 }
 
 .navbar-toggler {
@@ -90,4 +99,17 @@ h4 {
     width: 27vw;
     min-width: 300px;
     height: 29vh;
+}
+
+.Solar-energy ,.Electric-engineering{
+    border-radius: 5px;
+    background-position: center;  
+    height: 50vh;
+}
+.Solar-energy{
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../img/png-jpeg/4334.jpg);
+    
+}
+.Electric-engineering{   
+    background-image: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../img/png-jpeg/2940.jpg);  
 }
