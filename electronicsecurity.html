@@ -88,60 +88,81 @@
         </nav>
     </header>
 
-    <!-- form to emailjs API -->
-    <main class="container my-4 bg-white" id="formtalktous">
-        <section class="container p-5">
-            <h1 class="display-8 w-75 mb-4">Fale Conosco</h1>
-            <form class="row row-cols-2" id="contact-form">
-                <input type="hidden" name="contact_number">
-                <div class="col-12 col-md-6">
-                    <div class="mb-3">
-                        <label for="from_name" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="from_name" name="from_name"
-                            placeholder="Exemplo: Fulano da Silva (nome fictício)">
-                    </div>
-                    <div class="mb-3">
-                        <label for="reply_to" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="reply_to" name="reply_to"
-                            aria-describedby="emailHelp" placeholder="Exemplo: fulano.silva@email.com (email fictício)">
-                        <div id="emailHelp" class="form-text"> Nunca compartilharemos seu e-mail com mais ninguém.</div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensagem</label>
-                        <textarea class="form-control message-h" id="message" name="message"
-                            placeholder="Deixe aqui sua mensagem" maxlength="300"></textarea>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <button type="submit" class="btn btn-primary" value="Send" id="submit">Enviar</button>
-                </div>
-            </form>
+
+    <main class="container my-4 bg-white" id="main">
+        <section class="row p-5 d-flex align-items-center">
+            <div class="col-12 col-md-6">
+                <h1 class="display-8">Segurança Eletrônica</h1>
+                <p class="my-4 w-75">
+                    <strong class="text-gold">Uma salvaguarda fundamental para lares e empresas.</strong> Sistemas de
+                    alarme, vigilância por câmeras e controle de acesso oferecem serenidade e proteção contra intrusos.
+                </p>
+                <a href="#cards-eletrnicsec" class="btn btn-outline-warning"><i class="bi bi-info-circle"></i>
+                    Mais
+                    informações </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="img-fluid mt-4" src="./assets/img/png-jpeg/3772.jpg" alt="">
+            </div>
         </section>
     </main>
 
-
-    <section class="container my-4 p-5" id="maptalktous">
-        <div class="col-12 col-md-12 ">
-            <h3 class="display-8 w-75 mb-4">Onde Estamos?</h3>
-            <div class="text-center">
-                <iframe class="maps-style"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14619.997647624885!2d-46.5427378!3d-23.6401921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce438d5b3062af%3A0x923f01d7b7d98273!2sEletro%20Building!5e0!3m2!1spt-BR!2sbr!4v1694616774078!5m2!1spt-BR!2sbr"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="container p-5 bg-grey rounded-1" id="cards-eletrnicsec">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/png-jpeg/reconhecimento-facial-bloco.jpg" class="card-img-top" alt="mulher na frente de um reconhecedor facial">
+                <div class="card-body">
+                  <h5 class="card-title">Controle de Acesso</h5>
+                  <p class="card-text">O controle de acesso é crucial para garantir segurança e restrição de áreas. Tecnologias como cartões e biometria protegem ambientes sensíveis.</p>
+                  <a href="./talktous.html#formtalktous" class="btn btn-warning"><i class="bi bi-info-circle"></i>
+                    Mais
+                    informações </a>
+                </div>
+              </div>
             </div>
-
-        </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/png-jpeg/card-mini-banner-cameras-hdcvi.jpg" class="card-img-top" alt="câmera fazendo a vigilancia">
+                <div class="card-body">
+                  <h5 class="card-title">Sistemas CFTV</h5>
+                  <p class="card-text">As câmeras oferecem eficiência inigualável na vigilância. Com alta resolução e conectividade, proporcionam monitoramento preciso e segurança abrangente em tempo real.</p>
+                  <a href="./talktous.html#formtalktous" class="btn btn-warning"><i class="bi bi-info-circle"></i>
+                    Mais
+                    informações </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/png-jpeg/intelbras_interfonia_sub-empresarial_590x360_1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Interfonia</h5>
+                  <p class="card-text">A interfonia proporciona comunicação eficiente e segura em residências e empresas. Agiliza o contato e o controle de acesso, aumentando a conveniência e a segurança.</p>
+                  <a href="./talktous.html#formtalktous" class="btn btn-warning"><i class="bi bi-info-circle"></i>
+                    Mais
+                    informações </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/png-jpeg/intelbras_alarmes_sub-central_590x360_0.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sistemas de Alarmes</h5>
+                  <p class="card-text">Os alarmes garantem eficiência na proteção de propriedades. Detectam intrusões e perigos, oferecendo alertas rápidos para manter a segurança em níveis superiores.</p>
+                  <a href="./talktous.html#formtalktous" class="btn btn-warning"><i class="bi bi-info-circle"></i>
+                    Mais
+                    informações </a>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
-    <!-- script do bootstrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-
-    <!-- script da emailjs  -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript" src="./assets/js/emailjs.js"></script>
 </body>
 
 </html>
