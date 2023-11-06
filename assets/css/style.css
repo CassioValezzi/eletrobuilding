@@ -7,13 +7,13 @@
     --color-black: #000;
     --color-white: #fff;
     --color: #0000002d;
-
-
 }
-html{
+
+html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -39,7 +39,8 @@ h4 {
 .text-li-grey {
     color: var(--color-light-grey2);
 }
-.text-white{
+
+.text-white {
     color: var(--color-white);
 }
 
@@ -130,18 +131,18 @@ h4 {
 }
 
 .Electric-engineering {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/png-jpeg/2940.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/png-jpeg/229956-P1ZDKK-674.bak.jpg);
 }
 
-.Electronic-security{
+.Electronic-security {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/png-jpeg/2329.jpg);
 }
 
-.btn_end{
+.btn_end {
     align-self: end;
 }
 
 
-.h-footer{
+.h-footer {
     height: 20vh;
 }
