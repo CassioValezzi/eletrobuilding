@@ -1,6 +1,6 @@
-const Bootstrap = document.createElement("link");
-Bootstrap.rel = "stylesheet";
-Bootstrap.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css?v=1." + new Date().getTime();
+const mycss = document.createElement("link");
+mycss.rel = "stylesheet";
+mycss.href = "./assets/css/style.css?v=1." + new Date().getTime();
 
 
-document.head.appendChild(Bootstrap);
+document.head.appendChild(mycss);
